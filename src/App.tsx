@@ -1,4 +1,3 @@
-import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from './components/Header';
@@ -46,11 +45,10 @@ function App() {
   const displayTodos = () => {
     setShow(!show);
   };
-  console.log(user)
 
   return (
-    <div>
-    <Header user={user[0]} displayTodos={displayTodos} />
+    <div className="App">
+    <Header user={user[0]} displayTodos={displayTodos} show={show} />
     {show
       ? (todos.length > 0 && <Todos todos={todos} />)
       : (posts &&

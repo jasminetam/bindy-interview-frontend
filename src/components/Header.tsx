@@ -4,9 +4,10 @@ import { userProps } from '../utils/interface';
 type Props = {
   user: userProps;
   displayTodos: () => void;
+  show: boolean;
 };
 
-function Header({ user, displayTodos }: Props) {
+function Header({ user, displayTodos, show }: Props) {
   return (
     <div className="header">
       <div>
@@ -18,7 +19,7 @@ function Header({ user, displayTodos }: Props) {
       </div>
       <div className="btnWrapper">
         <button className="todosBtn" onClick={() => displayTodos()}>
-          TODOS
+          {show ? "POSTS" : "TODOS"}
         </button>
       </div>
     </div>

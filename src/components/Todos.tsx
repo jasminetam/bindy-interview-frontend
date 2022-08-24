@@ -11,8 +11,8 @@ import {
 import { todosProps } from '../utils/interface';
 
 type Props = {
-    todos: todosProps[],
-}
+  todos: todosProps[];
+};
 
 ChartJS.register(
   CategoryScale,
@@ -25,6 +25,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  type: 'horizontalBar',
   plugins: {
     legend: {
       position: 'top',
@@ -32,15 +33,17 @@ export const options = {
   },
 };
 
-function Todos({ todos }:Props) {
-  const titleArr = todos.map((todo: todosProps) => todo.title.split(' ').join('').length);
+function Todos({ todos }: Props) {
+  const titleArr = todos.map(
+    (todo: todosProps) => todo.title.split(' ').join('').length
+  );
 
   const data = {
-    labels: todos.map((x:todosProps) => x.id), // 2022/01 2022/03
+    labels: todos.map((x: todosProps) => x.id), // 2022/01 2022/03
     datasets: [
       {
         label: `Todos`,
-        backgroundColor: 'rgba(162, 222, 208, 1)',
+        backgroundColor: '#00171F',
         data: titleArr.map((x: number) => x),
       },
     ],
@@ -48,10 +51,8 @@ function Todos({ todos }:Props) {
 
   return (
     <>
-      <h2 className="text-xl">Todos</h2>
-      <Bar
-        data={data}
-      />
+        <h2 className="todosTitle">Todos</h2>
+        <Bar data={data} />
     </>
   );
 }

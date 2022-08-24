@@ -5,24 +5,31 @@
     align-items: center;
     justify-content: center;
     background-color: #00171F;
-    color: white;
+    color: white; 
   }
   
   .btnWrapper {
     width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-right: 30px;
+ margin-right: 30px;
+ margin-bottom: 20px;
   }
   
   .todosBtn {
     outline: none;
     background: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     padding: 10px;
     color: #00171F;
-    margin-bottom: 10px;
   font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
+  }
+
+  .todosBtn:hover {
+    background-color: #00171F;
+    border: 2px solid white;
+    color: white;
   }
