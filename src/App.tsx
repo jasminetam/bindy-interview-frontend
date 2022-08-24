@@ -11,6 +11,7 @@ function App() {
   const [posts, setPosts] = useState<postsProps[]>([]);
   const [todos, setTodos] = useState<todosProps[]>([]);
   const [show, setShow] = useState<boolean>(false);
+ 
 
   useEffect(() => {
     const getUser = async () => {

@@ -39,7 +39,7 @@ function Todos({ todos }: Props) {
   );
 
   const data = {
-    labels: todos.map((x: todosProps) => x.id), // 2022/01 2022/03
+    labels: todos.map((x: todosProps) => x.id),
     datasets: [
       {
         label: `Todos`,
@@ -51,7 +51,7 @@ function Todos({ todos }: Props) {
 
   return (
     <>
-        <h2 className="todosTitle">Todos</h2>
+        <h1>Todos</h1>
         <Bar data={data} />
     </>
   );

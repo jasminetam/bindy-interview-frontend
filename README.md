@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 After you have downloaded the project, you can run
 
-### `yarn` or `npm install`
+### `yarn` or `npm install` on the terminal
 
-Install all the dependencies
+Install all the dependencies, then run
 
 ### `yarn start` or `npm start`
 

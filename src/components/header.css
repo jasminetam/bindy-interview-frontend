@@ -7,8 +7,12 @@
     background-color: #00171F;
     color: white; 
   }
+
+  .userInfoBtnWrapper {
+    padding-top: 10px;
+  }
   
-  .btnWrapper {
+  .todosBtnWrapper {
     width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -16,7 +20,7 @@
  margin-bottom: 20px;
   }
   
-  .todosBtn {
+  .headerBtn {
     outline: none;
     background: white;
     border: 2px solid white;
@@ -28,8 +32,17 @@
   cursor: pointer;
   }
 
-  .todosBtn:hover {
+  .headerBtn:hover {
     background-color: #00171F;
     border: 2px solid white;
     color: white;
   }
+
+  @media (min-width: 1024px) {
+  .header h1 {
+    font-size: 50px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+}

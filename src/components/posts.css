@@ -1,7 +1,22 @@
 .posts {
-    padding: 30px;
+    padding: 20px;
   }
   
   .posts h1 {
     color: #00171F;
+    font-size: 26px;
+  }
+
+  @media (min-width: 1024px) {
+    .posts {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .posts h1 {
+      color: #00171F;
+      font-size: 32px;
+    }
+    .posts p {
+      font-size: 22px;
+    }
   }
